@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <div class="loading">
+    <span class="loader"></span>
+  </div>
+
+
+    <main class="">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-dark">
+        <div class="container">
+          <div class="d-flex justify-content-center align-items-center">
+            <img class="logo me-1" src="./images/logo@2x.png" alt="" />
+            <div class="info">
+              <a class="navbar-brand p-0" href="#"> Weather </a>
+              <p class="">tagline goes here</p>
+            </div>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page">News</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page">LiveCameras</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page">Photos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="main-section">
+        <div class="weather-info">
+          <div class="parent container">
+            <input
+              type="text"
+              class="form-control"
+              id="locationInput"
+              placeholder="Find Your Location..."
+            />
+            <div class="child">
+              <button class="btn btn-lg btn-info" id="#findBtn">Find</button>
+            </div>
+          </div>
+
+          <div class="container content-container">
+            <div class="row g-0 rounded-1">
+              <div class="col-4">
+                <div class="content">
+                  <div class="header1 d-flex justify-content-between">
+                    <span class="d-block" id="today-name"></span>
+                    <span class="d-block" id="month-name"></span>
+                  </div>
+                  <div class="info1 rounded-bottom text-center d-flex flex-column">
+                    <p class="mt-0 lead" id="location"></p>
+                    <div class="d-flex justify-content-between">
+                      <h1 id="today-degree" class=""></h1>
+                    <img src="" id="current-img" alt="" />
+                  </div>
+
+                    <div>
+                      <span id="description"></span>
+                      <div class="">
+                        <i class="fa-solid fa-umbrella"></i>
+                        <span id="humidity">%</span>
+                        <span>||</span>
+                        <i class="fa-solid fa-wind"></i>
+                        <span id="wind">km/h</span>
+
+                        <span>||</span>
+
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <span id="direction"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="content">
+                  <div class="header2 d-flex justify-content-center">
+                    <span class="d-block" id="next-day"></span>
+                  </div>
+                  <div class="info2 text-center">
+                    <img src="" alt="" class="nextDay" id="next-img" />
+                    <div>
+                      <h1 id="max-temp1">39.4oC</h1>
+                      <h3 id="min-temp1">24.7o</h3>
+
+                      <span id="text"> </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="content rounded">
+                  <div class="header3 d-flex justify-content-center">
+                    <span class="d-block" id="third-day"></span>
+                  </div>
+                  <div class="info3 text-center">
+                    <img src="" alt="" id="third-img" />
+                    <div>
+                      <h1 id="max-temp2"></h1>
+                      <h3 id="min-temp2"></h3>
+
+                      <span id="text1"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container mt-5">
+          <div class="footer-info d-flex justify-content-around mb-2">
+            <div class="footer-input">
+              <input
+                type="text"
+                class="form-control footer-input"
+                placeholder="Enter Your Email.."
+              />
+            </div>
+
+            <div class="icons d-flex">
+              <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+
+              <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+
+              <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+
+              <div class="icon">
+                <i class="fa-brands fa-google"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <span class="text-white"
+              >Copyright 2014 Company name. Designed by Tokhy. All rights
+              reserved</span
+            >
+          </div>
+        </div>
+      </footer>
+    </main>
+
+
+
+    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
